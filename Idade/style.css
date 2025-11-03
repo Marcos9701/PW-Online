@@ -1,0 +1,90 @@
+/* Variáveis para cores (mude aqui) */
+:root {
+  --header-color: #007bff;
+  --footer-color: #007bff;
+  --background-color: #427568;
+  --container-bg: #fff;
+  --button-color: #007bff;
+  --button-hover: #0056b3;
+  --text-color: #333;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background-color: var(--header-color);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Main container */
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background-color: var(--container-bg);
+  padding: 30px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 300px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--text-color);
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 15px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: var(--button-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-color);
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
